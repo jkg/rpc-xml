@@ -198,7 +198,7 @@ sub new ## no critic (ProhibitExcessComplexity)
         # Set any other headers as well
         Accept => 'text/xml'
     );
-    $resp->content_type("text/xml; charset='$RPC::XML::ENCODING'"});
+    $resp->content_type("text/xml; charset='$RPC::XML::ENCODING'");
     $resp->code(RC_OK);
     $resp->message('OK');
     $self->{__response} = $resp;
